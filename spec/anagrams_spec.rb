@@ -1,7 +1,10 @@
-describe 'Anagram' do 
+#require 'pry'
+
+describe 'Anagram' do
   it 'should detect no matches' do
     diaper = Anagram.new('diaper')
     expect(diaper.match(%w(hello world zombies pants dipper))).to eq([])
+    #binding.pry
   end
 
   it 'should detect a simple anagram' do
